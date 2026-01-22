@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!-- Очень важный мета-тег для адаптивности -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой адаптивный сайт</title>
+    <!-- Подключение Google Fonts (пример) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Slab:wght@300;600&display=swap" rel="stylesheet">
+    <!-- Подключение CSS файла -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Фавикон (замените на свой) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Контейнер для центрирования и ограничения максимальной ширины -->
+    <div class="container">
+        <!-- Шапка сайта с навигацией (Flexbox) -->
+        <header class="header">
+            <a href="/" class="logo">Логотип</a>
+            <!-- Навигационное меню -->
+            <nav class="nav">
+                <!-- Простой Flexbox список -->
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                </ul>
+                <!-- Кнопка для мобильного меню (бутерброд) -->
+                <button class="nav-toggle" aria-label="Открыть меню">
+                    <span class="hamburger"></span>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Основное содержимое -->
+        <main>
+            <!-- Герой-секция (Flexbox) -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">Добро пожаловать на наш адаптивный сайт</h1>
+                    <p class="hero-text">Здесь используется современный стек: Flexbox, Grid (по желанию), адаптивная типографика и медиазапросы.</p>
+                    <a href="#" class="btn">Узнать больше</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Заглушка для изображения">
+                </div>
+            </section>
+
+            <!-- Секция с карточками услуг/товаров (Flexbox или Grid) -->
+            <section class="features">
+                <h2 class="section-title">Наши преимущества</h2>
+                <div class="features-grid">
+                    <!-- Карточка 1 -->
+                    <article class="card">
+                        <div class="card-icon">🚀</div>
+                        <h3 class="card-title">Скорость</h3>
+                        <p class="card-text">Быстрая загрузка на всех устройствах благодаря оптимизированному коду.</p>
+                    </article>
+                    <!-- Карточка 2 -->
+                    <article class="card">
+                        <div class="card-icon">📱</div>
+                        <h3 class="card-title">Адаптивность</h3>
+                        <p class="card-text">Идеальное отображение на мобильных телефонах, планшетах и десктопах.</p>
+                    </article>
+                    <!-- Карточка 3 -->
+                    <article class="card">
+                        <div class="card-icon">🎨</div>
+                        <h3 class="card-title">Дизайн</h3>
+                        <p class="card-text">Чистый, современный интерфейс, ориентированный на пользователя.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Подвал сайта -->
+<footer class="footer">
+            <p class="footer-copyright">© 2023 Мой сайт. Все права защищены.</p>
+            <div class="footer-social">
+                <a href="#" class="social-link">FB</a>
+                <a href="#" class="social-link">TW</a>
+                <a href="#" class="social-link">IG</a>
+            </div>
+        </footer>
+    </div> <!-- Конец .container -->
+
+    <!-- Подключение JS файла -->
+    <script src="js/script.js"></script>
+</body>
+</html>
