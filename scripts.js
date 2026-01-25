@@ -1,4 +1,4 @@
-let a = prompt()("введите первое число")
-let b = prompt()
-let c = a * b
+let a = +prompt("Введите свой возраст", "");
+let b = Number(10)
+let c = a + b
 console.log(c)
