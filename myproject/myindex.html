@@ -1,12 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Мой адаптивный сайт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Slab:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./mystyles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <div></div>
-    
+
+    <div class="container">
+
+        <header class="header">
+            <a href="/" class="logo">Логотип (не жми, опасно, не закончил)</a>
+
+            <nav class="nav">
+
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                </ul>
+
+                <button class="nav-toggle">
+                    <span class="hamburger"></span>
+                </button>
+            </nav>
+        </header>
+
+
+        <main>
+
+            <section class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">Добро пожаловать на мой (маловероятно) сайт</h1>
+                    <p class="hero-text">Данный сайт сделан Роденко Вениамином Валерьевичем. (Дебилом)</p>
+                    <a href="#" class="btn">Узнать больше (нет)</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Заглушка для изображения">
+                </div>
+            </section>
+
+
+            <section class="features">
+                <h2 class="section-title">Наши недостатки</h2>
+                <div class="features-grid">
+
+                    <article class="card">
+                        <div class="card-icon">🚀</div>
+                        <h3 class="card-title">Скорость</h3>
+                        <p class="card-text">Для запуска сайта используется ядерная энергия и американские мегакомпьютеры.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">📱</div>
+                        <h3 class="card-title">Адаптивность</h3>
+                        <p class="card-text">Если открыть сайт ночью, то можно ослепнуть.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">🎨</div>
+                        <h3 class="card-title">Дизайн</h3>
+                        <p class="card-text">Ничего интересного.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer-copyright">© 2026 Мой сайт. Все права не защищены.</p>
+            <div class="footer-social">
+                <a href="#" class="social-link">Фасебуке</a>
+                <a href="#" class="social-link">Твиттер (для сои)</a>
+                <a href="#" class="social-link">Ютуб</a>
+            </div>
+        </footer>
+    </div>
+
 </body>
 </html>
