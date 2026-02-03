@@ -4,27 +4,27 @@
     box-sizing: border-box;
 }
 
-/* Базовые стили для всего документа */
+
 html {
-    font-size: 16px; /* Базовый размер шрифта для rem */
+    font-size: 16px;
 }
 
 body {
-    font-family: 'Inter', sans-serif; /* Основной шрифт */
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #000000;
     background-color: #ffffff;
 }
 
-/* Контейнер для центрирования контента */
+
 .container {
     width: 100%;
-    max-width: 1200px; /* Максимальная ширина на больших экранах */
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px; /* Отступы по бокам на мобильных */
+    padding: 0 20px;
 }
 
-/* ===== HEADER & NAVIGATION (Flexbox) ===== */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -44,7 +44,7 @@ body {
 .nav-list {
     display: flex;
     list-style: none;
-    gap: 2rem; /* Отступ между пунктами меню */
+    gap: 2rem;
 }
 
 .nav-link {
@@ -58,7 +58,7 @@ body {
     color: #3498db;
 }
 
-/* Кнопка "бургер" для мобильных - изначально скрыта */
+
 .nav-toggle {
     display: none;
     background: none;
@@ -94,7 +94,7 @@ body {
     bottom: -8px;
 }
 
-/* ===== HERO SECTION (Flexbox) ===== */
+
 .hero {
     display: flex;
     align-items: center;
@@ -131,7 +131,6 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Кнопка */
 .btn {
     display: inline-block;
     background-color: #3498db;
@@ -147,7 +146,6 @@ body {
     background-color: #2980b9;
 }
 
-/* ===== FEATURES / CARDS (Grid) ===== */
 .features {
     padding: 4rem 0;
 }
@@ -195,7 +193,7 @@ body {
     font-size: 0.95rem;
 }
 
-/* ===== FOOTER ===== */
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -221,11 +219,10 @@ body {
     color: #3498db;
 }
 
-/* ===== АДАПТИВНОСТЬ (Медиазапросы) ===== */
-/* Планшеты и небольшие ноутбуки (до 992px) */
+
 @media (max-width: 992px) {
     .hero {
-        flex-direction: column; /* Меняем направление Flexbox */
+        flex-direction: column;
         text-align: center;
         gap: 2rem;
     }
@@ -234,13 +231,12 @@ body {
     }
 }
 
-/* Планшеты в портретной ориентации и большие телефоны (до 768px) */
 @media (max-width: 768px) {
     html {
-        font-size: 15px; /* Немного уменьшаем базовый шрифт */
+        font-size: 15px;
     }
 
-    /* Прячем обычное меню, показываем кнопку бургер */
+
     .nav-list {
         display: none;
         flex-direction: column;
@@ -253,7 +249,7 @@ body {
         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     }
 
-    /* Класс для отображения меню через JS */
+
     .nav-list.active {
         display: flex;
     }
@@ -267,7 +263,7 @@ body {
     }
 
     .features-grid {
-        grid-template-columns: 1fr; /* Одна колонка */
+        grid-template-columns: 1fr;
     }
 
     .footer {
@@ -277,7 +273,7 @@ body {
     }
 }
 
-/* Мобильные телефоны (до 576px) */
+
 @media (max-width: 576px) {
     html {
         font-size: 14px;
