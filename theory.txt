@@ -205,3 +205,65 @@ let admin = 'admin'
 let password = 'password'
 if (login === admin && pass === password) {alert('Успешный вход')}
 else {alert('не правильно')}
+
+прогр запраш у польз длины сторон треуг с клавиатуры и выводит сообщ о типе треугольника.
+
+let a = +prompt("A - B", "");
+let b = +prompt("B - C", "");
+let c = +prompt("C - A", "");
+if (a === 0 && b === 0 && c === 0) {console.log('нету')}
+else if (a === b && b === c && c === a) {console.log('равносторонний')}
+else if (a * a === b * b + c * c || b * b === a * a + c * c || c * c === b * b + a * a ) {console.log('прямоугольный')}
+else if (a === 0 || b === 0 || c === 0) {console.log('нету')}
+else if (a === b || b === c || a === c) {console.log('Равнобедренный')}
+else if (a != b && b != c && a != c) {console.log('Разносторонний')}
+else {console.log('прямоугольный')}
+
+циклы while b for
+при написании сриптов зачастую встает задача выполнить однотипное действие мнго раз
+перебрать все числа от 1 до 10 и для всех выполнить одинаковый код (счетчик)
+пример кода
+
+let i = 0;
+while (i<10) {
+    i++
+alert(i)
+}
+
+do while
+
+let i = 0;
+do {alert(i)
+    i++
+}
+while(i < 0)
+
+цикл фор состоит из 3 основных частей
+1. инициализация
+2. условие
+3. действие
+
+
+
+let x = +prompt("Введите x");
+let y = +prompt("Введите y");
+if (x > 0 && y > 0) {
+    console.log("I четверть")
+}
+else if (x < 0 && y > 0) {
+    console.log("II четверть")
+}
+else if (x < 0 && y < 0) {
+    console.log("III четверть")
+}
+else if (x > 0 && y < 0) {
+    console.log("IV четверть")
+}
+else { console.log("Начало координат")
+}
+ 
+ 
+Дописать условия на то, что точка лежит на оси Х или на оси У
+ 
+
+прогр запраш число и выводит сумму всех чисел от 1 до этого числа с исп цикла фор
