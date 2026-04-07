@@ -8,6 +8,7 @@ const btnMul = document.getElementById('btnMul');
 const btnDiv = document.getElementById('btnDiv');
 const btnPow = document.getElementById('btnPow');
 const btnMod = document.getElementById('btnMod');
+const btnClear = document.getElementById('btnClear');
 
 function add() {
     resultDiv.innerHTML = Number(input1.value) + Number(input2.value);
@@ -48,3 +49,10 @@ function mod() {
     }
 }
 btnMod.addEventListener('click', mod);
+
+function clearInputs() {
+    input1.value = '';
+    input2.value = '';
+    resultDiv.innerHTML = '';
+}
+btnClear.addEventListener('click', clearInputs);
