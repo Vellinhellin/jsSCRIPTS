@@ -1,6 +1,6 @@
 сайт книга (learn javascript) learn.javascript.ru
 codebasiks.com
-js может встраиваться в хтмл и выполн автомат при загрузке вэб странцы. 
+js может встраиваться в хтмл и выполн автомат при загрузке вэб странцы.
 скрипты распространяются и выполняются как простой текст им не нужна спец подготовка
 или компиляция для запуска.
 сегодня js может выполняться не только в браузере, но и на сервере
@@ -397,3 +397,180 @@ myfunc()
 function myfunc(a, b){return a + b}
 let result = myfunc(3,2)
 console.log(result)
+
+
+объекты массивы
+массивы - сложная структура и отмечаются []
+let array = [-3, 0, 3.14, 'string', true, '22'] //по индексу от 0 до 5, объектов 6
+console.log(array[3]) //вывод элемента по индексу
+
+метод пуш
+array.push(10) - добавление элемента в конец массива
+console.log(array.length) - показать кол-во объектов
+array.shift - удаление первого элемента в начале
+array.unshift('') - добавление элем в начало массива
+array.pop() - удаляет последний элемент в массиве
+
+
+//Массивы
+let array = [-3, 0, 3.14, "string", true, "22", "string" ] //элементов 6. Индекс начинается с 0 (индексов 5)
+//вывод значения элемента по индексу
+// console.log(array.length) //вывод количества элементов в массиве
+ 
+array.push("10") //добавление элемента в конец массива
+console.log(array)
+array.shift() //удаление первого элемента в массиве
+console.log(array)
+array.unshift("hello world") //добавляет элемент в начало массива
+console.log(array)
+array.pop() //удаляет последний элемент в массиве
+console.log(array)
+ 
+console.log(array.indexOf("string")) //возвращает индекс элемента со значением "string"
+
+
+метод индексов
+console.log(array.indexOf('string')) - возвращает индекс элемента со значением стринг
+
+
+метод филтер - возвращает новый массивы содерж элементы которые выполняют условия (фильтрация)
+
+const array = [-3, -1, 0, 3.14, 10, 20]
+const newArray = array.filter(function(element) {
+    if (element >= 0) {
+        return true
+    } 
+    else {
+        return false
+    }
+})
+
+console.log(array)
+console.log(newArray)
+
+(6) [-3, -1, 0, 3.14, 10, 20]
+(4) [0, 3.14, 10, 20]
+
+
+
+const array = [-3, -1, 0, 3.14, 10, 20]
+array.forEach(element => {
+    element = element * 2
+    console.log(element);
+    })
+
+console.log(array);
+
+ -6
+ -2
+ 0
+ 6.28
+ 20
+ 40
+ (6) [-3, -1, 0, 3.14, 10, 20]
+
+
+
+const array = [-3, -1, '0', 3.14, 10, 20]
+const newArray = array.map(element => {
+    return element * 2
+    });
+
+console.log(newArray)
+console.log(newArray.includes(0))
+
+(6) [-6, -2, 0, 6.28, 20, 40]
+true
+
+
+console.log(newArray.sort)
+
+
+const array = [-3, -1, 0, 3.14, 10, 20]
+const newArray = array.map(element => element * element)
+console.log(newArray)
+элементы массивы возводятся в квадрат
+
+///создать массив который содержит все четные числа
+///const newArray = array.filter(Element => Element % 2 === 0)
+///console.log(newArray)
+
+
+concat() - слияние массивов
+const arrayFirst = [-3, -1, 0, 3.14, 10, 20]
+const arraySecond = [30, 40, 50]
+const arrayThird = [ -10, -20, -30]
+const mixedArray = arrayFirst.concat(arraySecond).concat(arrayThird)
+console.log(mixedArray)
+[-3, -1, 0, 3.14, 10, 20, 30, 40, 50, -10, -20, -30]
+
+
+slice() - срез массива
+const sliceArray = arrayFirst.slice(3, 4) - с 3 индекса до 4
+console.log(sliceArray)
+[3.14]
+
+
+
+
+
+МОДУЛЬ 3 РАБОТА С DOM
+document.getElementById("first").style.background = "black"
+document.getElementById("second").style.background = "orange"
+document.getElementById("third").style.background = "white"
+в скриптах
+
+const first = document.getElementById("first")
+first.style.background = "black"
+first.style.color = "white"
+
+
+querySelector - метод который вызывает через айди или класс
+
+document.querySelector("[тег]") - возвращает первый элемент по тегу 
+const first = document.querySelector("div")
+first.style.background = "red"
+
+
+///innerHTML = <h1>Заголовок<h2> - используется для получения HTML содержимого элемента
+const first = document.querySelector("div")
+first.innerHTML = "<h1>Hello</h1>"
+
+
+AddEventListener('click", clicker) - метод, в котором написано событие и функция которая будет вызвана
+
+const clicker=() => {
+const h1 = document.getElementById("h1")
+first.textContent = "Test"
+first.style.color = "red"
+first.style.fontsize = "100px"
+}
+const myBtn = document.querySelector('.myBtn')
+myBtn.addEventListener('click', clicker)
+
+
+setAttribute("", "") 1 - тип атрибума 2 - название атрибута
+
+
+classList.toggle - добавляет класс если он отсутствует и наоборот
+querySelectorAll - возвращает все элементы в виде массива
+
+дз: Реализовать каждую задачу отдельной функцией в одном .js файле:
+
+1) Изменение текста элемента при клике.
+Создайте кнопку и элемент <p>. При клике на кнопку измените текст внутри <p> на фразу "Текст изменен" .
+2) Переключение класса при наведении.
+Создайте блок с текстом. При наведении на блок добавляйте ему класс, который меняет цвет фона. 
+При уходе курсора удаляйте этот атрибут класс.
+3) Переключение видимости элемента.
+Создайте кнопку <button> и элемент <div>. По нажатию на кнопку скрывайте и показывайте элемент <div>
+4) Изменение стилей элементов.
+Создайте несколько блоков (div) и кнопок (button). Каждая из них должна изменять стиль (цвет фона, размер шрифта) 
+какого-либо блока по нажатию на соответствующую кнопку.
+5) Добавление и удаление элементов списка.
+Создайте список <ul> с элементами списка (<li>). Добавьте текстовое поле и кнопку, 
+при нажатии на которую добавляется новый элемент в список. Также рядом с каждым элементов создайте кнопку "Удалить", 
+которая удаляет конкретный элемент из списка.
+6) Изменение нескольких элементов на странице.
+Сделайте таблицу с несколькими строками и столбцами. При нажатии на ячейку она должна менять свой цвет на зеленый. 
+При повторном нажатии - возвращаться в исходное состояние.
