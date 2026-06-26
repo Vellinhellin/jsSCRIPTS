@@ -5,11 +5,11 @@
     margin-left: 50px;
     width: 60px;
     height: 40px;
-    background-color:skyblue;
+    background-color:white;
     border: 2px solid black;
 }
 .block.hovered {
-    background-color: rgb(255, 156, 26);
+    background-color: rgb(16, 84, 209);
 }
 .mdiv{
     margin-bottom: 60px;
@@ -18,7 +18,7 @@
 .block1{
     width: 200px;
     height: 100px;
-    background: skyblue;
+    background: white;
     margin: 10px;
      margin-left: 50px;
     text-align: center;
@@ -27,7 +27,7 @@
 .block2{
     width: 200px;
     height: 100px;
-    background: skyblue;
+    background: white;
     margin: 10px;
      margin-left: 50px;
     text-align: center;
@@ -36,7 +36,7 @@
 .block3{
     width: 200px;
      height: 100px;
-    background: skyblue;
+    background: white;
     margin: 10px;
      margin-left: 50px;
     text-align: center;

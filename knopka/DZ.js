@@ -35,7 +35,7 @@ button.addEventListener('click', () => {
 function changeBg() {
     let block = document.getElementById('block1');
     if (block.style.background === 'red') {
-    block.style.background = 'skyblue';
+    block.style.background = 'white';
     } 
     else {
     block.style.background = 'red';
